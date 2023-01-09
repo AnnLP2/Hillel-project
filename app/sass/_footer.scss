@@ -2,8 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    // grid-template-columns: min-content;
-    // grid-template-rows: 1fr;
+    padding-top: 32px;
     flex-wrap: wrap;
     &__top,
     &__contacts {
@@ -12,20 +11,23 @@
         flex-direction: column;
         align-items: center;
     }
+    &__top {
+        padding-bottom: 21px;
+    }
+    &__map {
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $colorActiveRegular;
+        padding-top: 10px;
+    }
 }
 .adress--footer {
     font-weight: 400;
     display: inline-flex;
     align-items: center;
     color: $colorMainRegular;
-}
-
-.footer__map {
-    font-size: 12px;
-    line-height: 15px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: $colorActiveRegular;
 }
 
 .fb--footer {
@@ -50,17 +52,23 @@
 }
 
 .copyright {
+    display: inline-flex;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     color: $colorGreyText;
+    padding-top: 30px;
 }
 
 @media (min-width: 768px) {
     .footer {
+        align-items: flex-start;
         &__top,
         &__contacts {
             flex-direction: row;
+        }
+        &__map {
+            padding-top: 0;
         }
     }
     .adress--footer {
@@ -72,9 +80,40 @@
             width: 6px;
             height: 6px;
             border-radius: 50%;
-            background-color: $colorGreySeparator;
+            background-color: $colorGreyText;
             margin-left: 6px;
             margin-right: 6px;
         }
+    }
+    .phone--footer {
+        &::after,
+        &::before {
+            content: "";
+            background-color: $colorGreyText;
+        }
+    }
+    .copyright {
+        align-self: center;
+    }
+}
+
+@media (min-width: 992px) {
+    .container--flex {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .footer {
+        width: 100%;
+        flex-direction: row;
+        &-box {
+            width: 60%;
+        }
+    }
+    .copyright {
+        width: 40%;
+        align-self: flex-start;
+        justify-content: flex-end;
+        padding-top: 0;
     }
 }
