@@ -32,6 +32,10 @@
   padding: 0 15px;
 }
 
+.container--main {
+  padding: 0 30px;
+}
+
 .container--flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -339,6 +343,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 32px;
+  padding-bottom: 30px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -488,6 +493,88 @@ a {
             justify-content: flex-end;
     padding-top: 0;
   }
+}
+
+.about {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.about__title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 28px;
+}
+
+.about__text {
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 30px;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+.about-inset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 40px;
+  border-left: 4px solid #e6e6f0;
+}
+
+.about-inset__icon, .about-inset__text {
+  padding-left: 30px;
+}
+
+.about-inset__icon {
+  font-size: 36px;
+  line-height: 44px;
+  padding-bottom: 10px;
+  background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-inset__icon::before {
+  content: "";
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-right: 8px;
+}
+
+.about-inset .icon01 {
+  background-image: url(../img/flag-about.svg);
+}
+
+.about-inset .icon02 {
+  background-image: url(../img/bag-about.svg);
+}
+
+.about-inset .icon03 {
+  background-image: url(../img/star-about.svg);
+}
+
+.about-inset__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #323264;
 }
 
 /*# sourceMappingURL=style.css.map */
