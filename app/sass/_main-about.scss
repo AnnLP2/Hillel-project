@@ -43,27 +43,72 @@
                 content: "";
                 width: 32px;
                 height: 32px;
-                // background-image: url(../img/flag-about.svg);
                 background-repeat: no-repeat;
                 background-position: center center;
                 margin-right: 8px;
             }
+            &.icon01::before {
+                background-image: url(../img/flag-about.svg);
+            }
+            &.icon02::before {
+                background-image: url(../img/bag-about.svg);
+            }
+            &.icon03::before {
+                background-image: url(../img/star-about.svg);
+            }
         }
-        .icon01 {
-            background-image: url(../img/flag-about.svg);
-        }
-        .icon02 {
-            background-image: url(../img/bag-about.svg);
-        }
-        .icon03 {
-            background-image: url(../img/star-about.svg);
-        }
-
         &__text {
             font-weight: 400;
             font-size: 16px;
             line-height: 20px;
             color: $colorMainRegular;
+        }
+    }
+}
+.team {
+    width: 100%;
+    height: 114px;
+    background-image: url(../img/team.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__title {
+        font-size: 36px;
+        line-height: 44px;
+        letter-spacing: 13px;
+        text-transform: uppercase;
+        color: $colorBasicWhite;
+        opacity: 0.8;
+    }
+}
+
+.achievements {
+    border-bottom: 2px solid $colorGreySeparator;
+    &__title {
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $colorMainRegular;
+    }
+}
+.bg-color {
+    background-color: $colorGreyBg;
+}
+
+@media (min-width: 768px) {
+    .team {
+        width: 100%;
+        height: 233px;
+        background-image: url(../img/team-tablet.png);
+        &__title {
+            font-size: 46px;
+            line-height: 56px;
+            letter-spacing: 63px;
         }
     }
 }

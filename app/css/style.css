@@ -558,15 +558,15 @@ a {
   margin-right: 8px;
 }
 
-.about-inset .icon01 {
+.about-inset__icon.icon01::before {
   background-image: url(../img/flag-about.svg);
 }
 
-.about-inset .icon02 {
+.about-inset__icon.icon02::before {
   background-image: url(../img/bag-about.svg);
 }
 
-.about-inset .icon03 {
+.about-inset__icon.icon03::before {
   background-image: url(../img/star-about.svg);
 }
 
@@ -575,6 +575,63 @@ a {
   font-size: 16px;
   line-height: 20px;
   color: #323264;
+}
+
+.team {
+  width: 100%;
+  height: 114px;
+  background-image: url(../img/team.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.team__title {
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: 13px;
+  text-transform: uppercase;
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+.achievements {
+  border-bottom: 2px solid #e6e6f0;
+}
+
+.achievements__title {
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #323264;
+}
+
+.bg-color {
+  background-color: #f5f5fa;
+}
+
+@media (min-width: 768px) {
+  .team {
+    width: 100%;
+    height: 233px;
+    background-image: url(../img/team-tablet.png);
+  }
+  .team__title {
+    font-size: 46px;
+    line-height: 56px;
+    letter-spacing: 63px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
