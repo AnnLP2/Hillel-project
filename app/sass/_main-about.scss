@@ -28,6 +28,8 @@
             font-size: 36px;
             line-height: 44px;
             padding-bottom: 10px;
+            display: inline-flex;
+            align-items: center;
             @include gradienttext;
             &::before {
                 content: "";
@@ -92,6 +94,12 @@
 }
 
 @media (min-width: 768px) {
+    .about {
+        &__title {
+            font-size: 38px;
+            line-height: 46px;
+        }
+    }
     .team {
         height: 233px;
         background-image: url(../img/team-tablet.png);
@@ -113,15 +121,31 @@
         }
     }
     .about {
+        padding-top: 60px;
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
-        width: 100%;
         &-box {
-            width: 60%;
+            width: 55%;
+            padding-right: 30px;
+        }
+        &-wrap {
+            width: 45%;
+        }
+        &-wrap--tab {
+            display: flex;
+            justify-content: flex-end;
         }
         &-inset {
-            width: 40%;
+            max-width: 388px;
         }
+        &__title--tab {
+            max-width: 362px;
+        }
+    }
+}
+
+@media (min-width: 1201px) {
+    .container--main {
+        padding: 0 180px;
     }
 }

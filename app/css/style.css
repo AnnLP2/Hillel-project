@@ -540,6 +540,12 @@ a {
   font-size: 36px;
   line-height: 44px;
   padding-bottom: 10px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -621,6 +627,10 @@ a {
 }
 
 @media (min-width: 768px) {
+  .about__title {
+    font-size: 38px;
+    line-height: 46px;
+  }
   .team {
     height: 233px;
     background-image: url(../img/team-tablet.png);
@@ -642,22 +652,39 @@ a {
     line-height: 105px;
   }
   .about {
+    padding-top: 60px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 100%;
   }
   .about-box {
-    width: 60%;
+    width: 55%;
+    padding-right: 30px;
+  }
+  .about-wrap {
+    width: 45%;
+  }
+  .about-wrap--tab {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
   .about-inset {
-    width: 40%;
+    max-width: 388px;
+  }
+  .about__title--tab {
+    max-width: 362px;
+  }
+}
+
+@media (min-width: 1201px) {
+  .container--main {
+    padding: 0 180px;
   }
 }
 
