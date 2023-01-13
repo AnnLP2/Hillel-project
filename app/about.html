@@ -4,6 +4,20 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="preload"
+            href="./fonts/montserrat-v25-latin_cyrillic-700.woff2"
+            as="font"
+            type="font/woff"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="./fonts/montserrat-v25-latin_cyrillic-regular.woff2"
+            as="font"
+            type="font/woff"
+            crossorigin="anonymous"
+        />
         <link rel="stylesheet" href="./css/style.css" />
         <title>Document</title>
     </head>
@@ -107,7 +121,22 @@
                 </section>
             </div>
             <div class="team">
-                <h3 class="team__title">team</h3>
+                <picture>
+                    <source
+                        media="(min-width: 992px)"
+                        srcset="./img/team-desktop.png"
+                    />
+                    <source
+                        media="(min-width: 768px)"
+                        srcset="./img/team-tablet-hd.png"
+                    />
+                    <img
+                        class="img-responsive"
+                        src="./img/team-tablet.png"
+                        alt="Our team"
+                    />
+                </picture>
+                <p class="team__title">team</p>
             </div>
             <div class="container container--main">
                 <section class="about">
