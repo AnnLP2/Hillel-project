@@ -61,13 +61,21 @@
                 <nav class="menu">
                     <button class="menu-btn" type="button"></button>
                     <ul class="menu__list">
-                        <li>
+                        <li class="menu__item">
                             <a class="menu__link active" href="#">about us</a>
                         </li>
-                        <li><a class="menu__link" href="#">services</a></li>
-                        <li><a class="menu__link" href="#">team</a></li>
-                        <li><a class="menu__link" href="#">publications</a></li>
-                        <li><a class="menu__link" href="#">contact</a></li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">services</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">team</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">publications</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">contact</a>
+                        </li>
                     </ul>
                 </nav>
             </header>
@@ -123,16 +131,20 @@
             <div class="team">
                 <picture>
                     <source
+                        media="(min-width: 1201px)"
+                        srcset="./img/team.jpg"
+                    />
+                    <source
                         media="(min-width: 992px)"
-                        srcset="./img/team-desktop.png"
+                        srcset="./img/team-desktop.jpg"
                     />
                     <source
                         media="(min-width: 768px)"
-                        srcset="./img/team-tablet-hd.png"
+                        srcset="./img/team-tablet-hd.jpg"
                     />
                     <img
                         class="img-responsive"
-                        src="./img/team-tablet.png"
+                        src="./img/team-tablet.jpg"
                         alt="Our team"
                     />
                 </picture>

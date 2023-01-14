@@ -92,6 +92,7 @@
 
 @media (min-width: 768px) {
     .about {
+        padding-top: 60px;
         &__title {
             font-size: 38px;
             line-height: 46px;
@@ -118,11 +119,11 @@
         display: flex;
         flex-wrap: wrap;
         &-box {
-            width: 55%;
+            width: 57%;
             padding-right: 30px;
         }
         &-wrap {
-            width: 45%;
+            width: 43%;
         }
         &-wrap--tab {
             display: flex;
@@ -139,6 +140,15 @@
 
 @media (min-width: 1201px) {
     .container--main {
-        padding: 0 180px;
+        padding: 0;
+    }
+    .about {
+        &-box {
+            width: 63%;
+            padding-right: 21px;
+        }
+        &-wrap {
+            width: 37%;
+        }
     }
 }

@@ -26,13 +26,14 @@
 }
 
 .container {
-  max-width: 1320px;
+  max-width: 1440px;
   min-width: 375px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
 .container--main {
+  max-width: 1080px;
   padding: 0 30px;
 }
 
@@ -69,8 +70,7 @@ a {
 }
 
 .adress,
-.fb,
-.menu__list {
+.fb {
   display: none;
 }
 
@@ -168,6 +168,51 @@ a {
   margin-right: 4px;
 }
 
+.menu {
+  position: relative;
+}
+
+.menu__list {
+  list-style: none;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+  position: absolute;
+  left: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+
+.menu__list .active {
+  color: #f0145a;
+}
+
+.menu__item {
+  padding: 7px 0px;
+  background-color: #f5f5fa;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.menu__item:active {
+  background-color: #e6e6f0;
+}
+
+.menu__link {
+  font-size: 24px;
+  line-height: 29px;
+  color: #24a3ff;
+}
+
+.menu__link:hover {
+  color: #0085ff;
+}
+
 .menu-btn {
   width: 32px;
   height: 32px;
@@ -256,21 +301,25 @@ a {
   .fb:hover path {
     fill: #f0145a;
   }
+  .menu {
+    position: inherit;
+  }
   .menu-btn {
     display: none;
   }
   .menu__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-padding-start: 0px;
-            padding-inline-start: 0px;
-    list-style: none;
-    gap: 15px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    position: static;
   }
   .menu__list .active {
-    color: #f0145a;
     text-decoration: underline;
+  }
+  .menu__item {
+    background-color: #ffffff;
+    border: none;
   }
   .menu__link {
     font-size: 16px;
@@ -618,6 +667,9 @@ a {
 }
 
 @media (min-width: 768px) {
+  .about {
+    padding-top: 60px;
+  }
   .about__title {
     font-size: 38px;
     line-height: 46px;
@@ -643,11 +695,11 @@ a {
         flex-wrap: wrap;
   }
   .about-box {
-    width: 55%;
+    width: 57%;
     padding-right: 30px;
   }
   .about-wrap {
-    width: 45%;
+    width: 43%;
   }
   .about-wrap--tab {
     display: -webkit-box;
@@ -667,7 +719,14 @@ a {
 
 @media (min-width: 1201px) {
   .container--main {
-    padding: 0 180px;
+    padding: 0;
+  }
+  .about-box {
+    width: 63%;
+    padding-right: 21px;
+  }
+  .about-wrap {
+    width: 37%;
   }
 }
 
