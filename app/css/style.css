@@ -100,6 +100,63 @@
   display: none;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+.body {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  min-width: 375px;
+}
+
+.container {
+  max-width: 1440px;
+  min-width: 375px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container--main {
+  max-width: 1080px;
+  padding: 0 30px;
+}
+
+.container--flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
 .adress,
 .fb {
   display: none;
@@ -573,63 +630,6 @@
             justify-content: flex-end;
     padding-top: 0;
   }
-}
-
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0;
-}
-
-.body {
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  min-width: 375px;
-}
-
-.container {
-  max-width: 1440px;
-  min-width: 375px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-.container--main {
-  max-width: 1080px;
-  padding: 0 30px;
-}
-
-.container--flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-a {
-  text-decoration: none;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.img-responsive {
-  max-width: 100%;
-  height: auto;
 }
 
 .about {
