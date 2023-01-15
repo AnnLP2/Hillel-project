@@ -1,0 +1,77 @@
+.slider {
+    // padding: 0 30px;
+    &__item {
+        height: 90px;
+        background-color: $colorBasicWhite;
+        background-repeat: no-repeat;
+        background-position: center center;
+        border-radius: 12px;
+        &.item-01 {
+            background-image: url(../img/achievment-1.jpg);
+        }
+        &.item-02 {
+            background-image: url(../img/achievment-2.jpg);
+        }
+        &.item-03 {
+            background-image: url(../img/achievment-3.jpg);
+        }
+        &.item-04 {
+            background-image: url(../img/achievment-4.jpg);
+        }
+    }
+}
+
+.slick {
+    &-slide {
+        margin: 0 30px;
+    }
+    &-list {
+        margin: 0 -30px;
+    }
+}
+
+.my-dots {
+    padding-top: 30px;
+    list-style: none;
+    padding-inline-start: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & button {
+        font-size: 0;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        border: transparent;
+        outline: none;
+        background-color: $colorActiveRegular;
+        opacity: 0.2;
+        margin: 0 7px;
+        cursor: pointer;
+    }
+    & li.slick-active button {
+        background-color: $colorActiveRegular;
+        opacity: 1;
+    }
+}
+
+@media (min-width: 768px) {
+    .slider {
+        padding: 0;
+    }
+    .slick-slide {
+        margin: 0 20px;
+    }
+
+    .slick-list {
+        margin: 0 -20px;
+    }
+}
+
+@media (min-width: 992px) {
+    .slider {
+        &__item {
+            height: 110px;
+        }
+    }
+}

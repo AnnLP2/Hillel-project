@@ -6,7 +6,7 @@ $(".js-slider").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 20,
+    autoplaySpeed: 10,
     dotsClass: "my-dots",
     mobileFirst: true,
     responsive: [
@@ -14,7 +14,7 @@ $(".js-slider").slick({
             breakpoint: 767,
             settings: {
                 slidesToShow: 4,
-                slidesToScroll: 1,
+                slidesToScroll: 4,
                 dots: true,
             },
         },

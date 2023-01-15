@@ -76,6 +76,7 @@
 }
 
 .achievements {
+    padding: 30px;
     border-bottom: 2px solid $colorGreySeparator;
     &__title {
         font-size: 14px;
@@ -84,6 +85,7 @@
         letter-spacing: 1px;
         text-transform: uppercase;
         color: $colorMainRegular;
+        padding-bottom: 30px;
     }
 }
 .bg-color {

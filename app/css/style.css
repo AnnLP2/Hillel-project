@@ -157,6 +157,90 @@ a {
   height: auto;
 }
 
+.slider__item {
+  height: 90px;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 12px;
+}
+
+.slider__item.item-01 {
+  background-image: url(../img/achievment-1.jpg);
+}
+
+.slider__item.item-02 {
+  background-image: url(../img/achievment-2.jpg);
+}
+
+.slider__item.item-03 {
+  background-image: url(../img/achievment-3.jpg);
+}
+
+.slider__item.item-04 {
+  background-image: url(../img/achievment-4.jpg);
+}
+
+.slick-slide {
+  margin: 0 30px;
+}
+
+.slick-list {
+  margin: 0 -30px;
+}
+
+.my-dots {
+  padding-top: 30px;
+  list-style: none;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.my-dots button {
+  font-size: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: transparent;
+  outline: none;
+  background-color: #24a3ff;
+  opacity: 0.2;
+  margin: 0 7px;
+  cursor: pointer;
+}
+
+.my-dots li.slick-active button {
+  background-color: #24a3ff;
+  opacity: 1;
+}
+
+@media (min-width: 768px) {
+  .slider {
+    padding: 0;
+  }
+  .slick-slide {
+    margin: 0 20px;
+  }
+  .slick-list {
+    margin: 0 -20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .slider__item {
+    height: 110px;
+  }
+}
+
 .adress,
 .fb {
   display: none;
@@ -306,7 +390,6 @@ a {
   height: 32px;
   margin: 12px 0px 12px;
   background-color: transparent;
-  background-image: url(../img/hamburger.svg);
   background-repeat: no-repeat;
   background-position: center center;
   border-radius: 8px;
@@ -738,6 +821,7 @@ a {
 }
 
 .achievements {
+  padding: 30px;
   border-bottom: 2px solid #e6e6f0;
 }
 
@@ -748,6 +832,7 @@ a {
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #323264;
+  padding-bottom: 30px;
 }
 
 .bg-color {
