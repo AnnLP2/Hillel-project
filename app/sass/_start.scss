@@ -45,3 +45,8 @@ a {
     max-width: 100%;
     height: auto;
 }
+
+.stop-scroll {
+    overflow: hidden;
+    height: 100%;
+}
