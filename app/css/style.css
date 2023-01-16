@@ -429,6 +429,7 @@ a {
 }
 
 .menu__burger {
+  margin-top: 13px;
   width: 32px;
   height: 32px;
   cursor: pointer;
@@ -554,20 +555,32 @@ a {
   .menu {
     position: static;
   }
+  .menu__burger {
+    display: none;
+  }
   .menu__list {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     position: static;
-    display: block;
+    -webkit-transform: none;
+            transform: none;
+    -webkit-transition: none;
+    transition: none;
   }
   .menu__list .active {
     text-decoration: underline;
+    color: #f0145a;
   }
   .menu__item {
     background-color: #ffffff;
     border: none;
+    width: unset;
+    margin: 0;
   }
   .menu__link {
     font-size: 16px;
