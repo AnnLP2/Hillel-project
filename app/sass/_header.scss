@@ -253,6 +253,9 @@
             border: none;
             width: unset;
             margin: 0;
+            &:active {
+                background-color: $colorBasicWhite;
+            }
         }
         &__link {
             font-size: 16px;

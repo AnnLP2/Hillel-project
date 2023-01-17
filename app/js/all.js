@@ -11,7 +11,7 @@
         speed: 3000,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 10,
         dotsClass: "my-dots",
         mobileFirst: true,
@@ -20,7 +20,7 @@
                 breakpoint: 767,
                 settings: {
                     slidesToShow: 4,
-                    slidesToScroll: 4,
+                    slidesToScroll: 2,
                     dots: true,
                 },
             },
