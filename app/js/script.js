@@ -6,7 +6,7 @@
         speed: 3000,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 10,
         dotsClass: "my-dots",
         mobileFirst: true,

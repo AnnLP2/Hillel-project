@@ -1,0 +1,32 @@
+.wrap {
+    background: url(../img/h-symbol.svg) no-repeat center top,
+        linear-gradient(
+            228.57deg,
+            #323264 11.93%,
+            #323264 57.17%,
+            #643e72 87.46%
+        );
+    background-size: 523px 600px, cover;
+    position: relative;
+    border-radius: 0px 0px 12px 12px;
+    &::after {
+        content: "";
+        height: 10px;
+        background-color: #cacadb;
+        position: absolute;
+        bottom: -10px;
+        left: 20px;
+        right: 20px;
+        border-radius: 0px 0px 12px 12px;
+    }
+    &::before {
+        content: "";
+        height: 20px;
+        background-color: #e7e7f2;
+        position: absolute;
+        bottom: -20px;
+        left: 40px;
+        right: 40px;
+        border-radius: 0px 0px 12px 12px;
+    }
+}

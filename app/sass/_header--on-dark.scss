@@ -1,0 +1,75 @@
+.header {
+    &__top-line--on-dark {
+        background: rgba(245, 245, 250, 0.2);
+    }
+}
+
+.lang {
+    &__link--on-dark {
+        color: $colorBasicWhite;
+        text-transform: uppercase;
+        &:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+    }
+}
+
+.phone--on-dark {
+    color: $colorBasicWhite;
+}
+
+.menu {
+    &__overlay--on-dark {
+        top: 95px;
+        background-color: $colorMainRegular;
+        opacity: 0.7;
+    }
+    &__item--on-dark {
+        background: rgba(255, 255, 255, 0.2);
+        &:active {
+            background: rgba(255, 255, 255, 0.5);
+        }
+    }
+    &__link--on-dark {
+        color: $colorBasicWhite;
+        &:hover {
+            color: $colorAccent;
+        }
+    }
+    &__burger--on-dark {
+        background-color: transparent;
+    }
+
+    &__burger-line--on-dark {
+        background-color: $colorBasicWhite;
+    }
+}
+
+@media (min-width: 768px) {
+    .wrap {
+        background-size: 893px 1024px, cover;
+    }
+    .header {
+        &__top-line--on-dark {
+            background: unset;
+        }
+    }
+    .adress--on-dark {
+        color: $colorBasicWhite;
+    }
+    .menu {
+        &__item--on-dark {
+            background: unset;
+            &:active {
+                background-color: unset;
+            }
+        }
+        &__link--on-dark {
+            color: $colorBasicWhite;
+            &:hover {
+                text-decoration: underline;
+                color: $colorAccent;
+            }
+        }
+    }
+}
