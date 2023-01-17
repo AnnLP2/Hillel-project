@@ -1080,7 +1080,15 @@ a {
   background-color: transparent;
 }
 
+.menu__burger--on-dark:active {
+  background: rgba(255, 255, 255, 0.5);
+}
+
 .menu__burger-line--on-dark {
+  background-color: #ffffff;
+}
+
+.menu__burger-line--on-dark::after, .menu__burger-line--on-dark::before {
   background-color: #ffffff;
 }
 

@@ -38,10 +38,16 @@
     }
     &__burger--on-dark {
         background-color: transparent;
+        &:active {
+            background: rgba(255, 255, 255, 0.5);
+        }
     }
-
     &__burger-line--on-dark {
         background-color: $colorBasicWhite;
+        &::after,
+        &::before {
+            background-color: $colorBasicWhite;
+        }
     }
 }
 
