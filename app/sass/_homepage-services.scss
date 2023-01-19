@@ -72,3 +72,45 @@
         }
     }
 }
+
+@media (min-width: 768px) {
+    .services {
+        &__title {
+            padding-bottom: 60px;
+        }
+        &-box {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            &__wrap {
+                width: 50%;
+                margin: 0 -15px;
+            }
+            gap: 60px;
+            &__card {
+                margin: 0 15px;
+            }
+            &__icon {
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .services {
+        &-box {
+            &__wrap {
+                width: 30.3%;
+                margin: 0 -10px;
+            }
+            gap: 60px;
+            &__card {
+                margin: 0 10px;
+            }
+            &__title {
+            }
+        }
+    }
+}
