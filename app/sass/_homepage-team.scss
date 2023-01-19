@@ -1,17 +1,91 @@
 .team-section {
-}
-.team-section__slider {
+    padding-top: 30px;
+    padding-bottom: 60px;
+    &__slider {
+        padding-top: 30px;
+    }
+
+    &__slide {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: $colorGreyBg;
+        border-radius: 12px;
+    }
+    &__pic img {
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+    }
+    &__inset {
+        padding: 30px;
+    }
+    &__link {
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $colorActiveRegular;
+        display: inline-flex;
+        align-items: center;
+        &::after {
+            content: "";
+            width: 12px;
+            height: 12px;
+            background-image: url(../img/service-arrow.svg);
+            background-position: center bottom;
+            background-repeat: no-repeat;
+            padding-right: 2px;
+        }
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        @include gradienttext;
+        padding-top: 5px;
+        padding-bottom: 30px;
+        word-wrap: break-word;
+    }
+    &__name {
+        font-size: 16px;
+        line-height: 20px;
+        color: $colorGreyText;
+        padding-bottom: 6px;
+    }
+    &__position {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        color: $colorGreyText;
+    }
 }
 
-.team-section__slide {
+@media (min-width: 768px) {
+    .team-section {
+        padding-top: 60px;
+    }
 }
-.team-section__link {
-}
-.team-section__pic {
-}
-.team-section__title {
-}
-.team-section__name {
-}
-.team-section__position {
+
+@media (min-width: 992px) {
+    .team-section {
+        &____wrap {
+            display: flex;
+        }
+        &__slide {
+            flex-direction: row;
+        }
+        &__pic {
+            width: 45%;
+            & img {
+                border-top-left-radius: 12px;
+                border-top-right-radius: unset;
+                border-bottom-left-radius: 12px;
+            }
+        }
+        &__inset {
+            width: 55%;
+        }
+    }
+    .slick-slide {
+    }
 }

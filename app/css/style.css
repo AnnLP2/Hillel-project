@@ -1441,4 +1441,120 @@ a {
   color: #ffffff;
 }
 
+.team-section {
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+.team-section__slider {
+  padding-top: 30px;
+}
+
+.team-section__slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background-color: #f5f5fa;
+  border-radius: 12px;
+}
+
+.team-section__pic img {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.team-section__inset {
+  padding: 30px;
+}
+
+.team-section__link {
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #24a3ff;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.team-section__link::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-image: url(../img/service-arrow.svg);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  padding-right: 2px;
+}
+
+.team-section__title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  padding-top: 5px;
+  padding-bottom: 30px;
+  word-wrap: break-word;
+}
+
+.team-section__name {
+  font-size: 16px;
+  line-height: 20px;
+  color: #b3b3ba;
+  padding-bottom: 6px;
+}
+
+.team-section__position {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #b3b3ba;
+}
+
+@media (min-width: 768px) {
+  .team-section {
+    padding-top: 60px;
+  }
+}
+
+@media (min-width: 992px) {
+  .team-section____wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .team-section__slide {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .team-section__pic {
+    width: 45%;
+  }
+  .team-section__pic img {
+    border-top-left-radius: 12px;
+    border-top-right-radius: unset;
+    border-bottom-left-radius: 12px;
+  }
+  .team-section__inset {
+    width: 55%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
