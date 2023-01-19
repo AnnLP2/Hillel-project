@@ -1,0 +1,74 @@
+.services {
+    padding-bottom: 60px;
+    &__link {
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $colorActiveRegular;
+        display: inline-flex;
+        align-items: center;
+        &::after {
+            content: "";
+            width: 12px;
+            height: 12px;
+            background-image: url(../img/service-arrow.svg);
+            background-position: center bottom;
+            background-repeat: no-repeat;
+            padding-right: 2px;
+        }
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        @include gradienttext;
+        padding-top: 10px;
+    }
+    &-box {
+        &__card {
+        }
+        &__icon {
+            display: inline-flex;
+            width: 92px;
+            height: 92px;
+            background-color: $colorBasicWhite;
+            border-radius: 24px;
+            background-position: center center;
+            background-repeat: no-repeat;
+            margin-top: 30px;
+            &.icon1 {
+                background-image: url(../img/bag.svg);
+            }
+            &.icon2 {
+                background-image: url(../img/briefcase.svg);
+            }
+            &.icon3 {
+                background-image: url(../img/molecule.svg);
+            }
+            &.icon4 {
+                background-image: url(../img/hands.svg);
+            }
+            &.icon5 {
+                background-image: url(../img/shield.svg);
+            }
+            &.icon6 {
+                background-image: url(../img/judgement.svg);
+            }
+        }
+        &__title {
+            display: inline-flex;
+            font-size: 22px;
+            line-height: 27px;
+            color: $colorActiveRegular;
+            padding-top: 30px;
+            padding-bottom: 15px;
+        }
+        &__text {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            color: $colorBasicWhite;
+        }
+    }
+}

@@ -13,7 +13,7 @@
         text-align: center;
         color: $colorBasicWhite;
         padding-top: 129px;
-        padding-bottom: 129px;
+        padding-bottom: 159px;
     }
 }
 
@@ -27,7 +27,6 @@
 
 .tabs {
     padding-bottom: 30px;
-    max-width: 1080px;
     &__controls {
         display: flex;
         overflow: auto;
@@ -38,7 +37,7 @@
         }
         border-bottom: 4px solid rgba(255, 255, 255, 0.3);
         margin-bottom: 60px;
-        padding-bottom: 60px;
+        padding-bottom: 30px;
     }
     &__btn {
         white-space: nowrap;
@@ -86,20 +85,15 @@
     }
     .tabs {
         &__controls {
+            padding-bottom: 60px;
         }
         &__btn {
             font-size: 38px;
             line-height: 46px;
         }
-        &__content {
-        }
-        &__content.show {
-        }
         &__title {
             font-size: 30px;
             line-height: 37px;
-        }
-        &__text {
         }
     }
 }
@@ -150,6 +144,20 @@
         &__title {
             padding-top: 261px;
             padding-bottom: 305px;
+        }
+    }
+    .tabs {
+        display: grid;
+        grid-template-columns: min-content 1fr;
+        padding-bottom: 60px;
+        &__controls {
+        }
+        &__btn {
+        }
+        &__content.show {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
     }
 }

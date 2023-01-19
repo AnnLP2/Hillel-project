@@ -49,3 +49,21 @@
         body.classList.remove("stop-scroll");
     });
 })();
+
+(function () {
+    const tabsBtns = document.querySelectorAll(".tabs__btn");
+    const tabsContents = document.querySelectorAll(".tabs__content");
+
+    tabsBtns.forEach(function (button, index) {
+        button.addEventListener("click", function () {
+            tabsBtns.forEach(function (buttonColor) {
+                buttonColor.classList.remove("show");
+            });
+            tabsContents.forEach(function (text) {
+                text.classList.remove("show");
+            });
+            button.classList.add("show");
+            tabsContents[index].classList.add("show");
+        });
+    });
+})();

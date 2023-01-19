@@ -30,3 +30,21 @@
         border-radius: 0px 0px 12px 12px;
     }
 }
+
+@media (min-width: 768px) {
+    .wrap {
+        background-size: 893px 1024px, cover;
+    }
+}
+
+@media (min-width: 992px) {
+    .wrap {
+        background-size: 670px 768px, cover;
+    }
+}
+
+@media (min-width: 1201px) {
+    .wrap {
+        background-size: 697px 799px, cover;
+    }
+}
