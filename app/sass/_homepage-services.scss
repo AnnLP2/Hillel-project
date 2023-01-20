@@ -27,6 +27,8 @@
     }
     &-box {
         &__card {
+            display: flex;
+            flex-direction: column;
         }
         &__icon {
             display: inline-flex;

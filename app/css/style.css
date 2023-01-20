@@ -125,7 +125,7 @@
   padding: 0 30px;
 }
 
-.container--slider {
+.container--hp {
   padding: 0 30px;
 }
 
@@ -1386,6 +1386,16 @@ a {
   padding-top: 10px;
 }
 
+.services-box__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .services-box__icon {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -1508,9 +1518,15 @@ a {
   border-radius: 12px;
 }
 
-.team-section__pic img {
+.team-section__pic {
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
+  background-image: url(../img/test.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 500px;
+  background-size: cover;
 }
 
 .team-section__inset {
@@ -1573,6 +1589,10 @@ a {
   .team-section {
     padding-top: 60px;
   }
+  .team-section__title {
+    font-size: 38px;
+    line-height: 46px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -1588,15 +1608,153 @@ a {
             flex-direction: row;
   }
   .team-section__pic {
-    width: 45%;
-  }
-  .team-section__pic img {
+    width: 40%;
     border-top-left-radius: 12px;
     border-top-right-radius: unset;
     border-bottom-left-radius: 12px;
+    height: 531px;
+    background-size: cover;
   }
   .team-section__inset {
-    width: 55%;
+    width: 50%;
+  }
+}
+
+@media (min-width: 1201px) {
+  .team-section__pic {
+    width: 35%;
+    background-image: url(../img/test.jpg);
+    height: 346px;
+    background-size: cover;
+  }
+  .team-section__inset {
+    width: 80%;
+  }
+}
+
+.clients__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #323264;
+  padding-bottom: 30px;
+}
+
+.clients__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.clients__item {
+  width: 100%;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.clients__item.logo-1 {
+  background-color: #1c4280;
+  background-image: url(../img/hillel-logo.png);
+}
+
+.clients__item.logo-2 {
+  background-color: #143646;
+  background-image: url(../img/wannabiz-logo.png);
+}
+
+.clients__item.logo-3 {
+  background-color: #f48b30;
+  background-image: url(../img/tapgerine-logo.png);
+}
+
+.clients__item.logo-4 {
+  background-color: #9e4dc3;
+  background-image: url(../img/3dlook-logo.png);
+}
+
+.clients__item.logo-5 {
+  background-color: #fd9339;
+  background-image: url(../img/orangear-logo.png);
+}
+
+.clients__item.logo-6 {
+  background-color: #e2e2e4;
+  background-image: url(../img/adtellige-logo.png);
+}
+
+.clients__item.logo-7 {
+  background-color: #c71c36;
+  background-image: url(../img/clickky-logo.png);
+}
+
+.clients__item.logo-8 {
+  background-color: #dcf3f9;
+  background-image: url(../img/ecolease-logo.png);
+}
+
+.clients__item.logo-9 {
+  background-color: #eaeaea;
+  background-image: url(../img/infratek-logo.png);
+}
+
+.clients__item.logo-10 {
+  background-color: #282240;
+  background-image: url(../img/citypark-logo.png);
+}
+
+.clients__item.logo-11 {
+  background-color: #1d4568;
+  background-image: url(../img/art-print-logo.png);
+}
+
+.clients__item.logo-12 {
+  background-color: #000000;
+  background-image: url(../img/ultimate-card-logo.png);
+}
+
+.clients__item.logo-7, .clients__item.logo-8, .clients__item.logo-9, .clients__item.logo-10, .clients__item.logo-11, .clients__item.logo-12 {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .clients__box {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .clients__item {
+    width: 33.3%;
+  }
+  .clients__item.logo-7, .clients__item.logo-8, .clients__item.logo-9, .clients__item.logo-10, .clients__item.logo-11, .clients__item.logo-12 {
+    display: block;
+  }
+}
+
+@media (min-width: 992px) {
+  .clients__box {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .clients__item {
+    width: 25%;
   }
 }
 
