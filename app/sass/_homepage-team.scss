@@ -2,7 +2,7 @@
     padding-top: 30px;
     padding-bottom: 60px;
     &__slider {
-        padding-top: 30px;
+        padding-top: 21px;
     }
 
     &__slide {
@@ -68,32 +68,36 @@
 
 @media (min-width: 768px) {
     .team-section {
-        padding-top: 60px;
+        padding-top: 57px;
         &__title {
             font-size: 38px;
             line-height: 46px;
         }
     }
+    .my-dots {
+        padding-top: 22px;
+    }
 }
 
 @media (min-width: 992px) {
     .team-section {
-        &____wrap {
+        &__wrap {
             display: flex;
         }
         &__slide {
             flex-direction: row;
         }
         &__pic {
-            width: 40%;
+            background-image: url(../img/team-item-1-tablet-hd.jpg);
+            width: 44%;
             border-top-left-radius: 12px;
             border-top-right-radius: unset;
             border-bottom-left-radius: 12px;
-            height: 531px;
+            height: 529px;
             background-size: cover;
         }
         &__inset {
-            width: 50%;
+            width: 56%;
         }
     }
 }

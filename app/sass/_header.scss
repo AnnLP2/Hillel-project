@@ -197,14 +197,14 @@
         grid-template-rows: repeat(3, min-content);
         grid-template-columns: 1fr;
         &__top-line {
-            padding: 50px 0px 0px 0px;
+            padding: 40px 0px 0px 0px;
             background-color: $colorBasicWhite;
             margin: 0;
             align-items: center;
         }
         &__logo-box {
-            padding-top: 30px;
-            padding-bottom: 30px;
+            padding-top: 20px;
+            padding-bottom: 20px;
         }
     }
     .adress {
@@ -310,14 +310,14 @@
         &__logo-box {
             grid-row: 1 / -1;
             grid-column: 1 / 2;
-            padding-top: 50px;
-            padding-bottom: 6px;
+            padding-top: 45px;
+            padding-bottom: 3px;
         }
         &__top-line {
             grid-column: 2 / 3;
             grid-row: 1 / 2;
-            padding-top: 50px;
-            padding-bottom: 16px;
+            padding-top: 48px;
+            padding-bottom: 10px;
         }
     }
     .menu {

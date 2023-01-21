@@ -13,7 +13,7 @@
         text-align: center;
         color: $colorBasicWhite;
         padding-top: 129px;
-        padding-bottom: 159px;
+        padding-bottom: 154px;
     }
 }
 
@@ -36,11 +36,13 @@
             display: none;
         }
         border-bottom: 4px solid rgba(255, 255, 255, 0.3);
-        margin-bottom: 60px;
-        padding-bottom: 30px;
+        margin-bottom: 28px;
     }
     &__btn {
+        padding-bottom: 30px;
+        padding-right: 30px;
         white-space: nowrap;
+        font-family: "Montserrat", "Arial", sans-serif;
         font-weight: 700;
         font-size: 30px;
         line-height: 37px;
@@ -75,19 +77,22 @@
 
 @media (min-width: 768px) {
     .hero {
-        padding-bottom: 30px;
+        padding-bottom: 60px;
         &-box {
         }
         &__title {
-            padding-top: 269px;
+            padding-top: 266px;
             padding-bottom: 417px;
         }
     }
     .tabs {
+        padding-bottom: 60px;
         &__controls {
-            padding-bottom: 60px;
+            padding-bottom: 28px;
+            margin-bottom: 60px;
         }
         &__btn {
+            font-weight: 700;
             font-size: 38px;
             line-height: 46px;
         }
@@ -100,9 +105,7 @@
 
 @media (min-width: 992px) {
     .hero {
-        padding-bottom: 30px;
-        &-box {
-        }
+        padding-bottom: 60px;
         &__title {
             padding-top: 245px;
             padding-bottom: 289px;
@@ -111,22 +114,24 @@
     .tabs {
         display: grid;
         grid-template-columns: min-content 1fr;
-        padding-bottom: 60px;
+        padding-bottom: 42px;
         &__controls {
+            padding-top: 10px;
             display: flex;
             flex-direction: column;
             align-items: flex-end;
-            gap: 30px;
+            // gap: 30px;
             border-bottom: none;
             margin-bottom: 0;
             padding-bottom: 0;
             border-right: 4px solid rgba(255, 255, 255, 0.3);
-            padding-right: 60px;
+            padding-right: 25px;
             margin-right: 60px;
         }
         &__btn {
         }
         &__content {
+            padding-top: 10px;
         }
         &__content.show {
         }

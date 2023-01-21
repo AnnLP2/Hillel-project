@@ -25,7 +25,7 @@
         font-size: 30px;
         line-height: 37px;
         @include gradienttext;
-        padding-top: 10px;
+        padding-top: 4px;
         padding-bottom: 30px;
     }
     &-box {
@@ -86,6 +86,7 @@
         &__title {
             font-size: 38px;
             line-height: 46px;
+            padding-top: 9px;
         }
         &-box {
             grid-template-columns: repeat(2, 1fr);
@@ -93,6 +94,9 @@
         &-item {
             &.article-03 {
                 grid-column: -3 / -1;
+            }
+            &__pic.pic-03 {
+                background-image: url(../img/millennials-tablet.jpg);
             }
         }
     }
