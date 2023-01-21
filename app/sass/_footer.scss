@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 32px;
+    padding-top: 30px;
     padding-bottom: 30px;
     flex-wrap: wrap;
     &__top,
@@ -116,5 +116,18 @@
         align-self: flex-start;
         justify-content: flex-end;
         padding-top: 0;
+    }
+    .adress--footer {
+        &::after {
+            margin-left: 8px;
+            margin-right: 8px;
+        }
+    }
+    .phone--footer {
+        &::after,
+        &::before {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
     }
 }

@@ -676,7 +676,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 32px;
+  padding-top: 30px;
   padding-bottom: 30px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -826,6 +826,14 @@ a {
         -ms-flex-pack: end;
             justify-content: flex-end;
     padding-top: 0;
+  }
+  .adress--footer::after {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  .phone--footer::after, .phone--footer::before {
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 
@@ -1283,6 +1291,7 @@ a {
     font-weight: 700;
     font-size: 38px;
     line-height: 46px;
+    padding-right: 20px;
   }
   .tabs__title {
     font-size: 30px;
@@ -1320,7 +1329,7 @@ a {
     margin-bottom: 0;
     padding-bottom: 0;
     border-right: 4px solid rgba(255, 255, 255, 0.3);
-    padding-right: 25px;
+    padding-right: 35px;
     margin-right: 60px;
   }
   .tabs__content {
@@ -1337,7 +1346,10 @@ a {
     display: grid;
     grid-template-columns: -webkit-min-content 1fr;
     grid-template-columns: min-content 1fr;
-    padding-bottom: 60px;
+    padding-bottom: 38px;
+  }
+  .tabs__controls {
+    padding-top: 15px;
   }
   .tabs__content.show {
     display: -webkit-box;
@@ -1350,6 +1362,7 @@ a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding-top: 0;
   }
 }
 
@@ -1881,11 +1894,32 @@ a {
 }
 
 @media (min-width: 992px) {
+  .publications {
+    padding-top: 27px;
+  }
   .publications-box {
     grid-template-columns: repeat(3, 1fr);
   }
   .publications-item.article-03 {
     grid-column: 3 / 4;
+  }
+  .publications-item__pic.pic-03 {
+    background-image: url(../img/millennials-tablet-hd.jpg);
+  }
+}
+
+@media (min-width: 1201px) {
+  .publications-item__pic {
+    background-size: cover;
+  }
+  .publications-item__pic.pic-01 {
+    background-image: url(../img/associate-desktop.jpg);
+  }
+  .publications-item__pic.pic-02 {
+    background-image: url(../img/gdpr-desktop.jpg);
+  }
+  .publications-item__pic.pic-03 {
+    background-image: url(../img/millennials-desktop.jpg);
   }
 }
 

@@ -104,12 +104,34 @@
 
 @media (min-width: 992px) {
     .publications {
+        padding-top: 27px;
         &-box {
             grid-template-columns: repeat(3, 1fr);
         }
         &-item {
             &.article-03 {
                 grid-column: 3 / 4;
+            }
+            &__pic.pic-03 {
+                background-image: url(../img/millennials-tablet-hd.jpg);
+            }
+        }
+    }
+}
+@media (min-width: 1201px) {
+    .publications {
+        &-item {
+            &__pic {
+                background-size: cover;
+                &.pic-01 {
+                    background-image: url(../img/associate-desktop.jpg);
+                }
+                &.pic-02 {
+                    background-image: url(../img/gdpr-desktop.jpg);
+                }
+                &.pic-03 {
+                    background-image: url(../img/millennials-desktop.jpg);
+                }
             }
         }
     }
