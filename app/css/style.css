@@ -1801,11 +1801,16 @@ a {
 }
 
 .publications-box {
+  display: grid;
+  gap: 30px;
+}
+
+.publications-item {
   background-color: #ffffff;
   border-radius: 8px;
 }
 
-.publications-box__pic {
+.publications-item__pic {
   height: 200px;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1814,23 +1819,23 @@ a {
   border-top-right-radius: 8px;
 }
 
-.publications-box__pic.pic-01 {
+.publications-item__pic.pic-01 {
   background-image: url(../img/associate.jpg);
 }
 
-.publications-box__pic.pic-02 {
+.publications-item__pic.pic-02 {
   background-image: url(../img/gdpr.jpg);
 }
 
-.publications-box__pic.pic-03 {
+.publications-item__pic.pic-03 {
   background-image: url(../img/millennials.jpg);
 }
 
-.publications-box__inset {
+.publications-item__inset {
   padding: 30px;
 }
 
-.publications-box__link {
+.publications-item__link {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -1840,7 +1845,7 @@ a {
   margin-bottom: 15px;
 }
 
-.publications-box__date {
+.publications-item__date {
   font-size: 12px;
   line-height: 15px;
   letter-spacing: 1px;
@@ -1849,7 +1854,7 @@ a {
   padding-bottom: 15px;
 }
 
-.publications-box__text {
+.publications-item__text {
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
@@ -1862,7 +1867,21 @@ a {
   .publications__title {
     font-size: 38px;
     line-height: 46px;
-    padding-bottom: 60px;
+  }
+  .publications-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .publications-item.article-03 {
+    grid-column: -3 / -1;
+  }
+}
+
+@media (min-width: 992px) {
+  .publications-box {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .publications-item.article-03 {
+    grid-column: 3 / 4;
   }
 }
 
