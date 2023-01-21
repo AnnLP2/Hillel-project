@@ -19,6 +19,7 @@
 }
 
 .menu {
+    z-index: 1;
     &__overlay--on-dark {
         top: 95px;
         background-color: $colorMainRegular;
@@ -72,7 +73,7 @@
             color: $colorBasicWhite;
             &:hover {
                 text-decoration: underline;
-                color: $colorAccent;
+                color: $colorActiveHover;
             }
         }
     }

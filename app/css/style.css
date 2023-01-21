@@ -1082,6 +1082,10 @@ a {
   color: #ffffff;
 }
 
+.menu {
+  z-index: 1;
+}
+
 .menu__overlay--on-dark {
   top: 95px;
   background-color: #323264;
@@ -1139,7 +1143,7 @@ a {
   }
   .menu__link--on-dark:hover {
     text-decoration: underline;
-    color: #f0145a;
+    color: #0085ff;
   }
 }
 
