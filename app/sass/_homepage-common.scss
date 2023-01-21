@@ -1,0 +1,28 @@
+.services,
+.team-section,
+.publications {
+    &__link {
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $colorActiveRegular;
+        display: inline-flex;
+        align-items: center;
+        position: relative;
+        &::after {
+            content: "";
+            width: 12px;
+            height: 12px;
+            background-image: url(../img/service-arrow.svg);
+            background-position: center bottom;
+            background-repeat: no-repeat;
+            padding-right: 2px;
+            position: absolute;
+            right: -15px;
+        }
+        &:hover::after {
+            right: -25px;
+        }
+    }
+}

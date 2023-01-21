@@ -1387,30 +1387,6 @@ a {
   padding-bottom: 60px;
 }
 
-.services__link {
-  font-size: 14px;
-  line-height: 17px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: #24a3ff;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.services__link::after {
-  content: "";
-  width: 12px;
-  height: 12px;
-  background-image: url(../img/service-arrow.svg);
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  padding-right: 2px;
-}
-
 .services__title {
   font-weight: 700;
   font-size: 30px;
@@ -1556,30 +1532,6 @@ a {
 
 .team-section__inset {
   padding: 30px;
-}
-
-.team-section__link {
-  font-size: 14px;
-  line-height: 17px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: #24a3ff;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.team-section__link::after {
-  content: "";
-  width: 12px;
-  height: 12px;
-  background-image: url(../img/service-arrow.svg);
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  padding-right: 2px;
 }
 
 .team-section__title {
@@ -1793,30 +1745,6 @@ a {
   border-bottom: 2px solid #e6e6f0;
 }
 
-.publications__link {
-  font-size: 14px;
-  line-height: 17px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: #24a3ff;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.publications__link::after {
-  content: "";
-  width: 12px;
-  height: 12px;
-  background-image: url(../img/service-arrow.svg);
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  padding-right: 2px;
-}
-
 .publications__title {
   font-weight: 700;
   font-size: 30px;
@@ -1938,6 +1866,43 @@ a {
   .publications-item__pic.pic-03 {
     background-image: url(../img/millennials-desktop.jpg);
   }
+}
+
+.services__link,
+.team-section__link,
+.publications__link {
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #24a3ff;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.services__link::after,
+.team-section__link::after,
+.publications__link::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-image: url(../img/service-arrow.svg);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  padding-right: 2px;
+  position: absolute;
+  right: -15px;
+}
+
+.services__link:hover::after,
+.team-section__link:hover::after,
+.publications__link:hover::after {
+  right: -25px;
 }
 
 /*# sourceMappingURL=style.css.map */
