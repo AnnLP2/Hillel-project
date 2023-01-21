@@ -199,7 +199,7 @@ a {
 }
 
 .my-dots {
-  padding-top: 30px;
+  padding-top: 22px;
   list-style: none;
   -webkit-padding-start: 0px;
           padding-inline-start: 0px;
@@ -247,6 +247,18 @@ a {
 @media (min-width: 992px) {
   .slider__item {
     height: 110px;
+  }
+  .slider__item.item-01 {
+    background-image: url(../img/achievment-1-tablet.jpg);
+  }
+  .slider__item.item-02 {
+    background-image: url(../img/achievment-2-tablet.jpg);
+  }
+  .slider__item.item-03 {
+    background-image: url(../img/achievment-3-tablet.jpg);
+  }
+  .slider__item.item-04 {
+    background-image: url(../img/achievment-4-tablet.jpg);
   }
 }
 
@@ -851,7 +863,7 @@ a {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
-  margin-bottom: 28px;
+  margin-bottom: 25px;
 }
 
 .about__text {
@@ -859,7 +871,7 @@ a {
   font-size: 19px;
   line-height: 30px;
   color: #000000;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 }
 
 .about-inset {
@@ -964,10 +976,14 @@ a {
 @media (min-width: 768px) {
   .about {
     padding-top: 60px;
+    padding-bottom: 60px;
   }
   .about__title {
     font-size: 38px;
     line-height: 46px;
+  }
+  .about--part {
+    padding-bottom: 30px;
   }
   .team__title {
     font-size: 46px;
@@ -986,6 +1002,7 @@ a {
   }
   .about {
     padding-top: 60px;
+    padding-bottom: 30px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1019,12 +1036,18 @@ a {
   .container--main {
     padding: 0;
   }
+  .about {
+    padding-bottom: 60px;
+  }
   .about-box {
-    width: 63%;
-    padding-right: 21px;
+    width: 64%;
+    padding-right: 20px;
   }
   .about-wrap {
-    width: 37%;
+    width: 36%;
+  }
+  .about--part {
+    padding-bottom: 30px;
   }
 }
 
@@ -1172,19 +1195,9 @@ a {
 }
 
 .hero-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  padding-top: 125px;
+  position: relative;
+  height: 493px;
 }
 
 .hero__title {
@@ -1193,15 +1206,15 @@ a {
   line-height: 46px;
   text-align: center;
   color: #ffffff;
-  padding-top: 129px;
-  padding-bottom: 154px;
 }
 
 .scroll {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding-bottom: 30px;
+  position: absolute;
+  bottom: 30px;
+  left: calc(50% - 21px);
 }
 
 .scroll:hover .scroll__icon {
@@ -1276,9 +1289,9 @@ a {
   .hero {
     padding-bottom: 60px;
   }
-  .hero__title {
+  .hero-box {
     padding-top: 266px;
-    padding-bottom: 417px;
+    height: 804px;
   }
   .tabs {
     padding-bottom: 60px;
@@ -1303,9 +1316,9 @@ a {
   .hero {
     padding-bottom: 60px;
   }
-  .hero__title {
-    padding-top: 245px;
-    padding-bottom: 289px;
+  .hero-box {
+    padding-top: 242px;
+    height: 648px;
   }
   .tabs {
     display: grid;
@@ -1338,9 +1351,9 @@ a {
 }
 
 @media (min-width: 1201px) {
-  .hero__title {
+  .hero-box {
     padding-top: 261px;
-    padding-bottom: 305px;
+    height: 684px;
   }
   .tabs {
     display: grid;

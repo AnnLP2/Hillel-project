@@ -6,14 +6,14 @@
         font-size: 30px;
         line-height: 37px;
         @include gradienttext;
-        margin-bottom: 28px;
+        margin-bottom: 25px;
     }
     &__text {
         font-weight: 400;
         font-size: 19px;
         line-height: 30px;
         color: $colorBasicBlack;
-        margin-bottom: 30px;
+        margin-bottom: 24px;
     }
     &-inset {
         display: flex;
@@ -95,10 +95,14 @@
 @media (min-width: 768px) {
     .about {
         padding-top: 60px;
+        padding-bottom: 60px;
         &__title {
             font-size: 38px;
             line-height: 46px;
         }
+    }
+    .about--part {
+        padding-bottom: 30px;
     }
     .team {
         &__title {
@@ -121,6 +125,7 @@
     }
     .about {
         padding-top: 60px;
+        padding-bottom: 30px;
         display: flex;
         flex-wrap: wrap;
         &-box {
@@ -148,12 +153,16 @@
         padding: 0;
     }
     .about {
+        padding-bottom: 60px;
         &-box {
-            width: 63%;
-            padding-right: 21px;
+            width: 64%;
+            padding-right: 20px;
         }
         &-wrap {
-            width: 37%;
+            width: 36%;
         }
+    }
+    .about--part {
+        padding-bottom: 30px;
     }
 }

@@ -30,7 +30,7 @@
 }
 
 .my-dots {
-    padding-top: 30px;
+    padding-top: 22px;
     list-style: none;
     padding-inline-start: 0px;
     display: flex;
@@ -71,6 +71,18 @@
     .slider {
         &__item {
             height: 110px;
+            &.item-01 {
+                background-image: url(../img/achievment-1-tablet.jpg);
+            }
+            &.item-02 {
+                background-image: url(../img/achievment-2-tablet.jpg);
+            }
+            &.item-03 {
+                background-image: url(../img/achievment-3-tablet.jpg);
+            }
+            &.item-04 {
+                background-image: url(../img/achievment-4-tablet.jpg);
+            }
         }
     }
 }
